@@ -1,0 +1,7 @@
+# Placeholder photos from Wikimedia Commons. CC BY / BY-SA need a credit if the site is published.
+file	title	author	licence	source
+wall.jpg	File:Damaged plaster rough 16k (Amal Kumar via Poly Haven).jpg	Amal Kumar	CC0	https://commons.wikimedia.org/wiki/File:Damaged_plaster_rough_16k_(Amal_Kumar_via_Poly_Haven).jpg
+facade-curve.jpg	File:Windows of the Frost Building (Toronto, Canada) in monochrome.jpg	Maksim Sokolov (maxergon.com)	CC BY-SA 4.0	https://commons.wikimedia.org/wiki/File:Windows_of_the_Frost_Building_(Toronto,_Canada)_in_monochrome.jpg
+facade-fins.jpg	File:Fragment of facade of 1867 Yonge Street, Toronto.jpg	Maksim Sokolov (Maxergon)	CC BY-SA 4.0	https://commons.wikimedia.org/wiki/File:Fragment_of_facade_of_1867_Yonge_Street,_Toronto.jpg
+scaffold.jpg	File:Scaffolding at a Building construction site in Taiwan 2008-01-11.jpg	peter tr	CC BY 2.0	https://commons.wikimedia.org/wiki/File:Scaffolding_at_a_Building_construction_site_in_Taiwan_2008-01-11.jpg
+inspiration/opera-se.webp	File:Sydney Opera House, southeast view 20230224 2.jpg (cropped; toned in CSS)	DXR	CC BY-SA 4.0	https://commons.wikimedia.org/wiki/File:Sydney_Opera_House,_southeast_view_20230224_2.jpg
