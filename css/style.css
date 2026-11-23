@@ -812,11 +812,11 @@ html:not(.js) .k-bar { display: none; }
 .lv-row { display: grid; grid-template-columns: 96px repeat(4, minmax(0, 1fr)); gap: 8px; }
 .lv-name { display: grid; align-content: center; gap: 6px; font: 400 18px/1.2 var(--f-display); }
 .lv-name small { font: 500 10.5px/1 var(--f-body); letter-spacing: .12em; color: var(--mute); }
-.lv-t { position: relative; display: grid; place-items: center; aspect-ratio: 4 / 3; background: var(--bg); color: var(--fg); fill: currentColor; }
+.lv-t { position: relative; display: grid; place-items: center; aspect-ratio: 4 / 3; background: var(--bg); color: var(--fg); fill: currentColor; box-shadow: inset 0 0 0 1px var(--hair); }
 .lv-t svg { height: auto; overflow: visible; }
 .lv-st { width: 56%; } .lv-h { width: 76%; } .lv-m { width: 37%; } .lv-b { width: 48%; }
 .lv-t i { position: absolute; left: 8px; bottom: 7px; font: 500 9px/1 var(--f-body); font-style: normal; letter-spacing: .14em; text-transform: uppercase; opacity: .6; }
-.q-fmt { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1px; margin-top: 24px; background: var(--hair); border: 1px solid var(--hair); }
+.q-fmt { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 1px; margin-top: 24px; background: var(--hair); border: 1px solid var(--hair); }
 .q-fmt li { display: grid; gap: 10px; align-content: start; padding: 20px 18px; background: var(--ink); }
 .q-fmt b { font: 300 34px/1 var(--f-display); letter-spacing: .02em; color: var(--gold); }
 .q-fmt span { font-size: 13.5px; line-height: 1.5; color: var(--text); }
@@ -857,3 +857,17 @@ html:not(.js) .k-bar { display: none; }
   .lv-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .lv-name { grid-column: 1 / -1; display: flex; align-items: baseline; gap: 12px; padding-top: 8px; }
 }
+@media (max-width: 560px) {
+  .q-page { --pad: 64px; }
+  .q-page :is(.p-terms, .k-total) { padding-block: 56px; }
+  .q-cats > .wrap > h2 { margin-bottom: 24px; }
+  .q-stats { margin-top: 36px; }
+  .q-fmt { grid-template-columns: 1fr; }
+  .q-fmt li { grid-template-columns: 64px minmax(0, 1fr); align-items: baseline; padding: 16px 18px; }
+  .q-fmt b { font-size: 26px; }
+}
+
+/* SplitText masks each line at its line box, which cuts descenders (g, y, p). Each line gets room below,
+   and its mask is pulled back by the same amount, so the layout is unchanged and the hidden start stays hidden. */
+:is([data-split], .hero-title, .o-h) > div { margin-bottom: -.2em; }
+:is([data-split], .hero-title, .o-h) > div > div { padding-bottom: .2em; }
